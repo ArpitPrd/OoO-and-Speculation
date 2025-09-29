@@ -69,7 +69,7 @@
                     "addr_ranges": [
                         "0:18446744073709551615"
                     ],
-                    "assoc": 2,
+                    "assoc": 8,
                     "clk_domain": "board.clk_domain",
                     "clusivity": "mostly_incl",
                     "compressor": null,
@@ -172,7 +172,7 @@
                     },
                     "response_latency": 2,
                     "sequential_access": false,
-                    "size": 16384,
+                    "size": 32768,
                     "system": "board",
                     "tag_latency": 2,
                     "tags": {
@@ -180,7 +180,7 @@
                         "cxx_class": "gem5::BaseSetAssoc",
                         "name": "tags",
                         "path": "board.cache_hierarchy.l1_dcaches.tags",
-                        "assoc": 2,
+                        "assoc": 8,
                         "block_size": 64,
                         "clk_domain": "board.clk_domain",
                         "entry_size": 64,
@@ -190,10 +190,10 @@
                             "cxx_class": "gem5::TaggedSetAssociative",
                             "name": "indexing_policy",
                             "path": "board.cache_hierarchy.l1_dcaches.tags.indexing_policy",
-                            "assoc": 2,
+                            "assoc": 8,
                             "entry_size": 64,
                             "eventq_index": 0,
-                            "size": 16384
+                            "size": 32768
                         },
                         "partitioning_manager": null,
                         "power_model": [],
@@ -212,7 +212,7 @@
                         },
                         "replacement_policy": "board.cache_hierarchy.l1_dcaches.replacement_policy",
                         "sequential_access": false,
-                        "size": 16384,
+                        "size": 32768,
                         "system": "board",
                         "tag_latency": 2,
                         "warmup_percentage": 0
@@ -243,7 +243,7 @@
                     "addr_ranges": [
                         "0:18446744073709551615"
                     ],
-                    "assoc": 2,
+                    "assoc": 8,
                     "clk_domain": "board.clk_domain",
                     "clusivity": "mostly_incl",
                     "compressor": null,
@@ -280,7 +280,7 @@
                     },
                     "response_latency": 2,
                     "sequential_access": false,
-                    "size": 16384,
+                    "size": 32768,
                     "system": "board",
                     "tag_latency": 2,
                     "tags": {
@@ -288,7 +288,7 @@
                         "cxx_class": "gem5::BaseSetAssoc",
                         "name": "tags",
                         "path": "board.cache_hierarchy.l1_icaches.tags",
-                        "assoc": 2,
+                        "assoc": 8,
                         "block_size": 64,
                         "clk_domain": "board.clk_domain",
                         "entry_size": 64,
@@ -298,10 +298,10 @@
                             "cxx_class": "gem5::TaggedSetAssociative",
                             "name": "indexing_policy",
                             "path": "board.cache_hierarchy.l1_icaches.tags.indexing_policy",
-                            "assoc": 2,
+                            "assoc": 8,
                             "entry_size": 64,
                             "eventq_index": 0,
-                            "size": 16384
+                            "size": 32768
                         },
                         "partitioning_manager": null,
                         "power_model": [],
@@ -320,7 +320,7 @@
                         },
                         "replacement_policy": "board.cache_hierarchy.l1_icaches.replacement_policy",
                         "sequential_access": false,
-                        "size": 16384,
+                        "size": 32768,
                         "system": "board",
                         "tag_latency": 2,
                         "warmup_percentage": 0
@@ -409,7 +409,7 @@
                 "addr_ranges": [
                     "0:18446744073709551615"
                 ],
-                "assoc": 8,
+                "assoc": 16,
                 "clk_domain": "board.clk_domain",
                 "clusivity": "mostly_incl",
                 "compressor": null,
@@ -523,7 +523,7 @@
                     "cxx_class": "gem5::BaseSetAssoc",
                     "name": "tags",
                     "path": "board.cache_hierarchy.l2_cache.tags",
-                    "assoc": 8,
+                    "assoc": 16,
                     "block_size": 64,
                     "clk_domain": "board.clk_domain",
                     "entry_size": 64,
@@ -533,7 +533,7 @@
                         "cxx_class": "gem5::TaggedSetAssociative",
                         "name": "indexing_policy",
                         "path": "board.cache_hierarchy.l2_cache.tags.indexing_policy",
-                        "assoc": 8,
+                        "assoc": 16,
                         "entry_size": 64,
                         "eventq_index": 0,
                         "size": 262144
@@ -812,8 +812,8 @@
                         "activity": 0,
                         "backComSize": 5,
                         "branchPred": {
-                            "type": "BiModeBP",
-                            "cxx_class": "gem5::branch_prediction::BiModeBP",
+                            "type": "TournamentBP",
+                            "cxx_class": "gem5::branch_prediction::TournamentBP",
                             "name": "branchPred",
                             "path": "board.processor.cores.core.branchPred",
                             "btb": {
@@ -885,6 +885,9 @@
                                 "speculativePathLength": 256
                             },
                             "instShiftAmt": 2,
+                            "localCtrBits": 2,
+                            "localHistoryTableSize": 2048,
+                            "localPredictorSize": 2048,
                             "numThreads": 1,
                             "ras": {
                                 "type": "ReturnAddrStack",
@@ -2045,7 +2048,7 @@
                         "numPhysMatRegs": 2,
                         "numPhysVecPredRegs": 32,
                         "numPhysVecRegs": 256,
-                        "numROBEntries": 192,
+                        "numROBEntries": 64,
                         "numRobs": 1,
                         "numThreads": 1,
                         "power_gating_on_idle": false,
@@ -2113,7 +2116,7 @@
                                 "name": "workload",
                                 "path": "board.processor.cores.core.workload",
                                 "cmd": [
-                                    "compute_bound_wl_riscv"
+                                    "compute_bound_workload"
                                 ],
                                 "cwd": "/home/arpit/Desktop/iitd/sem_7/COL718/projects/OoO-and-Speculation",
                                 "drivers": [],
@@ -2122,7 +2125,7 @@
                                 "errout": "cerr",
                                 "euid": 100,
                                 "eventq_index": 0,
-                                "executable": "compute_bound_wl_riscv",
+                                "executable": "compute_bound_workload",
                                 "gid": 100,
                                 "input": "cin",
                                 "kvmInSE": false,

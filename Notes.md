@@ -73,3 +73,7 @@ may check the assignemnt ones, those are good.
 ## GEM5 org
 
 - common/simulation has checkpointing features
+
+## Note on Res
+
+- L2 Hit rate is much lesser than L1 because of the fact that only more difficult to search addresses access reach L2. 
