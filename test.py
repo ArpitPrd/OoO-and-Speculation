@@ -17,6 +17,7 @@ from gem5.isas import ISA
 from gem5.simulate.simulator import Simulator
 from gem5.resources.resource import BinaryResource
 from m5.objects import (
+    L2XBar,
     BiModeBP,
     LocalBP,
     TournamentBP, 
@@ -33,7 +34,7 @@ from m5.objects import (
     Cache,
     RiscvInterrupts
 )
-# import m5.objects as m5
+
 
 import argparse
 import sys
@@ -297,24 +298,43 @@ class L1L2Hierarchy(AbstractCacheHierarchy):
     ):
 
         super().__init__()
+
+        self.l2_bus = L2XBar()
+
         self.l1_icaches = [
-            SimpleCache(
+            Cache(
                 size=l1i_size,
-                # assoc=args.l1i_assoc,
+                assoc=args.l1i_assoc,
+                tag_latency = 2,
+                data_latency = 2,
+                response_latency = 2,
+                mshrs = 4,
+                tgts_per_mshr = 20,
                 replacement_policy=replace_policy_mapping(args.l1i_replace_policy)
             ) for i in range(args.num_cores)
         ]
         self.l1_dcaches = [
-            SimpleCache(
+            Cache(
                 size=l1d_size,
-                # assoc=args.l1d_assoc,
-                replacement_policy=replace_policy_mapping(args.l1d_replace_policy)
+                assoc=args.l1d_assoc,
+                tag_latency = 2,
+                data_latency = 2,
+                response_latency = 2,
+                mshrs = 4,
+                tgts_per_mshr = 20,
+                replacement_policy=replace_policy_mapping(args.l1d_replace_policy),
+                prefetcher=prefetcher_mapping(args.l1d_prefetcher_type)
             ) for i in range(args.num_cores)
         ]
 
-        self.l2_cache = SimpleCache(
+        self.l2_cache = Cache(
             size=l2_size,
-            # assoc=args.l2_assoc,
+            assoc=args.l2_assoc,
+            tag_latency = 20,
+            data_latency = 20,
+            response_latency = 20,
+            mshrs = 20,
+            tgts_per_mshr = 20,
             replacement_policy=replace_policy_mapping(args.l2_replace_policy),
         )
 
@@ -323,10 +343,10 @@ class L1L2Hierarchy(AbstractCacheHierarchy):
 
     def incorporate_cache(self, board):
         self.l2_cache.mem_side = board.get_mem_ports()[0][1]
-
+        self.l2_bus.mem_side_ports = self.l2_cache.cpu_side
         for i in range(args.num_cores):
-            self.l1_icaches[i].mem_side = self.l2_cache.cpu_side
-            self.l1_dcaches[i].mem_side = self.l2_cache.cpu_side
+            self.l1_icaches[i].mem_side = self.l2_bus.cpu_side_ports
+            self.l1_dcaches[i].mem_side = self.l2_bus.cpu_side_ports
         
         for i, core in enumerate(board.get_processor().get_cores()):
             # print(f"@@@\n{dir(core)}")
