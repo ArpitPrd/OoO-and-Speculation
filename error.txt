@@ -1,0 +1,57 @@
+Global frequency set at 1000000000000 ticks per second
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+board.remote_gdb: Listening for connections on port 7000
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 24.1.0.3
+gem5 compiled Sep 28 2025 00:02:15
+gem5 started Sep 29 2025 21:49:47
+gem5 executing on arpit-linux, pid 20681
+command line: ../gem5/build/RISCV/gem5.opt --outdir TypeOut test.py --cpu-type O3 --ROB-entries 192 --issue-width 4 --commit-width 4 --l1i-size 16KiB --l1i-assoc 2 --l1d-size 16KiB --l1d-assoc 2 --l2-size 256KiB --l2-assoc 8 --l1i-replace-policy LRU --l1d-replace-policy LRU --l2-replace-policy LRU --branch-predictor-enable --branch-predictor-type BiModeBP --binary compute_bound_wl_riscv --isa RISCV
+
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/sim/syscall_emul.cc:97: warn: ignoring syscall set_robust_list(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/arpit/Desktop/iitd/sem_7/COL718/projects/OoO-and-Speculation/compute_bound_wl_riscv'
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+gem5.opt: src/mem/request.hh:897: uint64_t gem5::Request::getExtraData() const: Assertion `extraDataValid()' failed.
+Program aborted at tick 10742580
+--- BEGIN LIBC BACKTRACE ---
+../gem5/build/RISCV/gem5.opt(_ZN4gem515print_backtraceEv+0x30)[0x5bd70b43fd30]
+../gem5/build/RISCV/gem5.opt(_ZN4gem512abortHandlerEi+0x4c)[0x5bd70b46f56c]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x79fc7dc45330]
+/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11c)[0x79fc7dc9eb2c]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e)[0x79fc7dc4527e]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0xdf)[0x79fc7dc288ff]
+/lib/x86_64-linux-gnu/libc.so.6(+0x2881b)[0x79fc7dc2881b]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3b517)[0x79fc7dc3b517]
+../gem5/build/RISCV/gem5.opt(+0x236d925)[0x5bd70c951925]
+../gem5/build/RISCV/gem5.opt(+0x236fdc9)[0x5bd70c953dc9]
+../gem5/build/RISCV/gem5.opt(_ZN4gem52o37DynInst11completeAccEPNS_6PacketE+0x5e)[0x5bd70bcd3a2e]
+../gem5/build/RISCV/gem5.opt(_ZN4gem52o37LSQUnit9writebackERKNS_14RefCountingPtrINS0_7DynInstEEEPNS_6PacketE+0x1d0)[0x5bd70bd1fe30]
+../gem5/build/RISCV/gem5.opt(_ZN4gem52o37LSQUnit18completeDataAccessEPNS_6PacketE+0x191)[0x5bd70bd225a1]
+../gem5/build/RISCV/gem5.opt(_ZN4gem52o33LSQ17SingleDataRequest14recvTimingRespEPNS_6PacketE+0x2a)[0x5bd70bd0beca]
+../gem5/build/RISCV/gem5.opt(_ZN4gem52o33LSQ14recvTimingRespEPNS_6PacketE+0xdf)[0x5bd70bd1019f]
+../gem5/build/RISCV/gem5.opt(_ZN4gem511SimpleCache11CPUSidePort10sendPacketEPNS_6PacketE+0x70)[0x5bd70b595f40]
+../gem5/build/RISCV/gem5.opt(_ZN4gem511SimpleCache12sendResponseEPNS_6PacketE+0x71)[0x5bd70b596561]
+../gem5/build/RISCV/gem5.opt(_ZN4gem510EventQueue10serviceOneEv+0xc2)[0x5bd70b45b152]
+../gem5/build/RISCV/gem5.opt(_ZN4gem59doSimLoopEPNS_10EventQueueE+0x68)[0x5bd70b499838]
+../gem5/build/RISCV/gem5.opt(_ZN4gem58simulateEm+0x283)[0x5bd70b499e33]
+../gem5/build/RISCV/gem5.opt(+0x10c3af0)[0x5bd70b6a7af0]
+../gem5/build/RISCV/gem5.opt(+0xde53b3)[0x5bd70b3c93b3]
+/lib/x86_64-linux-gnu/libpython3.12.so.1.0(+0x1df4b8)[0x79fc7efdf4b8]
+/lib/x86_64-linux-gnu/libpython3.12.so.1.0(_PyObject_Call+0x5c)[0x79fc7ef8485c]
+/lib/x86_64-linux-gnu/libpython3.12.so.1.0(_PyEval_EvalFrameDefault+0x8ec)[0x79fc7ef19dec]
+/lib/x86_64-linux-gnu/libpython3.12.so.1.0(PyEval_EvalCode+0x20f)[0x79fc7f0a091f]
+/lib/x86_64-linux-gnu/libpython3.12.so.1.0(+0x29c8b0)[0x79fc7f09c8b0]
+/lib/x86_64-linux-gnu/libpython3.12.so.1.0(+0x1dfadc)[0x79fc7efdfadc]
+/lib/x86_64-linux-gnu/libpython3.12.so.1.0(PyObject_Vectorcall+0x5c)[0x79fc7ef82b2c]
+/lib/x86_64-linux-gnu/libpython3.12.so.1.0(_PyEval_EvalFrameDefault+0x40ee)[0x79fc7ef1d5ee]
+../gem5/build/RISCV/gem5.opt(+0xe8e1d5)[0x5bd70b4721d5]
+../gem5/build/RISCV/gem5.opt(main+0x1fb)[0x5bd70b16992b]
+--- END LIBC BACKTRACE ---
+For more info on how to address this issue, please visit https://www.gem5.org/documentation/general_docs/common-errors/ 
+

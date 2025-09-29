@@ -4,6 +4,12 @@ from gem5.components.cachehierarchies.classic.private_l1_cache_hierarchy import 
     PrivateL1CacheHierarchy,
 )
 from gem5.components.memory import SingleChannelDDR3_1600
+from gem5.components.cachehierarchies.abstract_cache_hierarchy import (
+    AbstractCacheHierarchy,
+)
+# import gem5
+# print(f"@@@\n{dir(gem5.components.processors)}")
+# from gem5.components.processors.o3_cpu import O3CPU
 from gem5.components.processors.cpu_types import CPUTypes
 from gem5.components.processors.simple_processor import SimpleProcessor
 from gem5.isas import ISA
@@ -24,6 +30,8 @@ from m5.objects import (
     RandomRP,
     LFURP,
     BIPRP,
+    Cache,
+    RiscvInterrupts
 )
 # import m5.objects as m5
 
@@ -236,79 +244,166 @@ def branch_predictor_mapping(bp_str):
     return mapping.get(bp_str, BiModeBP())  # Default to BiModeBP if invalid option
 
 
-## Define the class for the private L2 cache
-class PrivateL2Cache(SimpleCache):
-    
-    type = "PrivateL2Cache"
-    # assoc = args.l2_assoc
-    size = args.l2_size
-    # latency = 20
-    # response_latency = 20
-    # mshrs = 16
-    # tgts_per_mshr = 12
-    replacement_policy = replace_policy_mapping(args.l2_replace_policy)
 
 
 ## combines both L1 and L2 cache 
-class CustomL1L2Hierarchy(PrivateL1CacheHierarchy):
-    def __init__(self, l1i_size="16KiB", l1d_size="16KiB", l2_size="256KiB"):
-        self._l2_size = l2_size
-        super().__init__(l1i_size=l1i_size, l1d_size=l1d_size)
-        
+# class CustomL1L2Hierarchy(PrivateL1CacheHierarchy):
+#     def __init__(self, l1i_size="16KiB", l1d_size="16KiB", l2_size="256KiB", l2_assoc=8):
+#         super().__init__(l1i_size=l1i_size, l1d_size=l1d_size)
+#         # Store L2 parameters for later use.
+#         # DO NOT create L1/L2 caches here. The parent class handles L1s,
+#         # and we will create the L2 in incorporate_cache.
+#         self._l2_size = l2_size
+#         self._l2_assoc = l2_assoc
 
-    def instantiate(self):
-        super().instantiate()
+#     def incorporate_cache(self, board):
+#         # Let the parent class create the L1 caches and connect them to the CPU.
+#         super().incorporate_cache(board)
 
-        # Example: Set replacement policies
-        
-        # self.l2_size = "256KiB"
-        
-        self.l1i.replacement_policy = replace_policy_mapping(args.l1i_replace_policy)
-        self.l1d.replacement_policy = replace_policy_mapping(args.l1d_replace_policy)
+#         # Create the L2 cache. SimpleCache is suitable for this level of scripting
+#         # as it provides cpu_side and mem_side ports.
+#         self.l2 = SimpleCache(
+#             size=self._l2_size,
+#             # assoc=self._l2_assoc,
+#             replacement_policy=replace_policy_mapping(args.l2_replace_policy),
+#         )
 
-        # Add prefetcher to L1D
-        if args.data_prefetcher_enable:
-            self.l1d.prefetcher = prefetcher_mapping(args.l1d_prefetcher_type) 
-        # Add prefetcher to L1I
-        if args.instruction_prefetcher_enable:
-            self.l1i.prefetcher = prefetcher_mapping(args.l1d_prefetcher_type) 
+#         # Register the L2 cache as a child of this hierarchy. This is crucial for
+#         # gem5's object model and for stats collection.
+#         self.add_child("l2", self.l2)
 
-        
-        # Create L2 as SimpleCache
-        self.l2 = SimpleCache(
-            size=self._l2_size,
-            assoc=args.l2_assoc,
-            latency=20,
-            response_latency=20,
+#         # Attach a prefetcher to the L2 cache if specified.
+#         if args.l2_prefetcher_type:
+#             self.l2.prefetcher = prefetcher_mapping(args.l2_prefetcher_type)
+
+#         # The parent class creates lists of L1 caches: self.l1_icaches and self.l1_dcaches.
+#         # We need to iterate through these and connect their memory side to the L2's CPU side.
+#         for l1_icache in self.l1_icaches:
+#             l1_icache.mem_side = self.l2.cpu_side
+
+#         for l1_dcache in self.l1_dcaches:
+#             l1_dcache.mem_side = self.l2.cpu_side
+
+#         # Connect the L2 cache to the main memory bus on the board.
+#         self.l2.mem_side = board.get_mem_port()
+
+
+class L1L2Hierarchy(AbstractCacheHierarchy):
+    def __init__(
+        self,
+        l1i_size: str,
+        l1d_size: str,
+        l2_size: str,
+    ):
+
+        super().__init__()
+        self.l1_icaches = [
+            SimpleCache(
+                size=l1i_size,
+                # assoc=args.l1i_assoc,
+                replacement_policy=replace_policy_mapping(args.l1i_replace_policy)
+            ) for i in range(args.num_cores)
+        ]
+        self.l1_dcaches = [
+            SimpleCache(
+                size=l1d_size,
+                # assoc=args.l1d_assoc,
+                replacement_policy=replace_policy_mapping(args.l1d_replace_policy)
+            ) for i in range(args.num_cores)
+        ]
+
+        self.l2_cache = SimpleCache(
+            size=l2_size,
+            # assoc=args.l2_assoc,
             replacement_policy=replace_policy_mapping(args.l2_replace_policy),
         )
 
-        self.l2.prefetcher = prefetcher_mapping(args.l2_prefetcher_type)
+        if args.l2_prefetcher_type:
+            self.l2_cache.prefetcher = prefetcher_mapping(args.l2_prefetcher_type)
 
-        # Connect L1 caches to L2
-        self.l1i.mem_side = self.l2.cpu_side
-        self.l1d.mem_side = self.l2.cpu_side
+    def incorporate_cache(self, board):
+        self.l2_cache.mem_side = board.get_mem_ports()[0][1]
 
-        # L2 -> memory will be connected by board
-        self.l2.mem_side = None
+        for i in range(args.num_cores):
+            self.l1_icaches[i].mem_side = self.l2_cache.cpu_side
+            self.l1_dcaches[i].mem_side = self.l2_cache.cpu_side
+        
+        for i, core in enumerate(board.get_processor().get_cores()):
+            # print(f"@@@\n{dir(core)}")
+            core.connect_icache(self.l1_icaches[i].cpu_side)
+            core.connect_dcache(self.l1_dcaches[i].cpu_side)
+
 
 
 # cache_hierarchy = PrivateL1CacheHierarchy(l1d_size="16KiB", l1i_size="16KiB", replacement_policy="LRU")
-cache_hierarchy = CustomL1L2Hierarchy(l1d_size=args.l1d_size, l1i_size=args.l1i_size)
+# cache_hierarchy = CustomL1L2Hierarchy(l1d_size=args.l1d_size, l1i_size=args.l1i_size)
+# cache_hierarchy = None
+cache_hierarchy = L1L2Hierarchy(
+    l1i_size=args.l1i_size,
+    l1d_size=args.l1d_size,
+    l2_size=args.l2_size,
+)
+
 
 # memory definition
 memory = SingleChannelDDR3_1600(size=args.memory_size)
 
-# processor def
+# # processor def
 processor = SimpleProcessor(cpu_type=cpu_mapping(args.cpu_type), isa=isa_mapping(args.isa), num_cores=args.num_cores)
 
-# building the board with all the basic elements on SimpleBoard
+# processor = O3CPU(isa=isa_mapping(args.isa), num_cores=args.num_cores)
+# print(f"@@@\n{dir(processor)}")
+# processor.create_interrupt_controllers()
+
+# processor.l1_icaches = [
+#     SimpleCache(
+#         size=args.l1i_size,
+#         # assoc=args.l1i_assoc,
+#         replacement_policy=replace_policy_mapping(args.l1i_replace_policy)
+#     )
+#     for _ in range(args.num_cores)
+# ]
+
+# processor.l1_dcaches = [
+#     SimpleCache(
+#         size=args.l1d_size,
+#         # assoc=args.l1d_assoc,
+#         replacement_policy=replace_policy_mapping(args.l1d_replace_policy)
+#     )
+#     for _ in range(args.num_cores)
+# ]
+
+# l2_cache = SimpleCache(
+#     size=args.l2_size,
+#     # assoc=args.l2_assoc,
+#     replacement_policy=replace_policy_mapping(args.l2_replace_policy)
+# )
+
+# if args.l2_prefetcher_type:
+#     l2_cache.prefetcher = prefetcher_mapping(args.l2_prefetcher_type)
+
+# for i in range(args.num_cores):
+#     processor.l1_icaches[i].mem_side = l2_cache.cpu_side
+#     processor.l1_dcaches[i].mem_side = l2_cache.cpu_side
+
+
+
+# # building the board with all the basic elements on SimpleBoard
 board = SimpleBoard(
     clk_freq=args.clock_frequency,
     processor=processor,
     memory=memory,
     cache_hierarchy=cache_hierarchy,
 )
+
+# board.connect_io_bus(processor.get_io_bus())
+# l2_cache.mem_side = board.get_memory_port()
+
+# for i in range(args.num_cores):
+#     processor.cores[i].add_icache(processor.l1_icaches[i])
+#     processor.cores[i].add_dcache(processor.l1_dcaches[i])
+
+
 
 
 """
@@ -337,6 +432,16 @@ for core in board.get_processor().get_cores():
         cpu.LFSTSize = 1
         cpu.store_set_clear_period = 1e7
     
+    if args.isa == "X86":
+        # X86 has a creation method on the ISA object and needs connections.
+        cpu.interrupts = cpu.isa[0].create_interrupt_controller()
+        cpu.interrupts[0].pio = board.get_mem_ports()[0][1]
+        cpu.interrupts[0].int_requestor = board.get_mem_ports()[0][1]
+    elif args.isa == "RISCV":
+        # RISC-V's interrupt controller is instantiated directly.
+        cpu.interrupts = RiscvInterrupts()
+
+
 # Setting the workload
 board.set_se_binary_workload(
     BinaryResource(args.binary),
