@@ -17,6 +17,7 @@ from gem5.isas import ISA
 from gem5.simulate.simulator import Simulator
 from gem5.resources.resource import BinaryResource
 from m5.objects import (
+    SystemXBar,
     L2XBar,
     BiModeBP,
     LocalBP,
@@ -147,15 +148,15 @@ def add_arguments(parser):
     parser.add_argument(
         "--l1d-prefetcher-type",
         type=str,
-        choices=["StridePrefetcher"],
-        default="StridePrefetcher",
+        choices=["StridePrefetcher", "None"],
+        default="None",
         help="Type of prefetcher to use.",
     )
     parser.add_argument(
         "--l2-prefetcher-type",
         type=str,
-        choices=["DCPTPrefetcher", "TaggedPrefetcher"],
-        default="DCPTPrefetcher",
+        choices=["DCPTPrefetcher", "TaggedPrefetcher", "None"],
+        default="None",
         help="Type of prefetcher to use.",
     )
     parser.add_argument(
@@ -212,6 +213,8 @@ def replace_policy_mapping(policy_str):
 
 
 def prefetcher_mapping(prefetcher_str):
+    if prefetcher_str == "None":
+        return None
     mapping = {
         "StridePrefetcher": StridePrefetcher(),
         "TaggedPrefetcher": TaggedPrefetcher(),
@@ -300,7 +303,7 @@ class L1L2Hierarchy(AbstractCacheHierarchy):
         super().__init__()
 
         self.l2_bus = L2XBar()
-
+        self.membus = SystemXBar()
         self.l1_icaches = [
             Cache(
                 size=l1i_size,
@@ -313,19 +316,17 @@ class L1L2Hierarchy(AbstractCacheHierarchy):
                 replacement_policy=replace_policy_mapping(args.l1i_replace_policy)
             ) for i in range(args.num_cores)
         ]
-        self.l1_dcaches = [
-            Cache(
-                size=l1d_size,
-                assoc=args.l1d_assoc,
-                tag_latency = 2,
-                data_latency = 2,
-                response_latency = 2,
-                mshrs = 4,
-                tgts_per_mshr = 20,
-                replacement_policy=replace_policy_mapping(args.l1d_replace_policy),
-                prefetcher=prefetcher_mapping(args.l1d_prefetcher_type)
-            ) for i in range(args.num_cores)
-        ]
+        l1d_params = {
+            "size": l1d_size, "assoc": args.l1d_assoc,
+            "tag_latency": 2, "data_latency": 2, "response_latency": 2,
+            "mshrs": 4, "tgts_per_mshr": 20,
+            "replacement_policy": replace_policy_mapping(args.l1d_replace_policy)
+        }
+        l1d_prefetcher = prefetcher_mapping(args.l1d_prefetcher_type)
+        if l1d_prefetcher:
+            l1d_params["prefetcher"] = l1d_prefetcher
+        
+        self.l1_dcaches = [ Cache(**l1d_params) for i in range(args.num_cores) ]
 
         self.l2_cache = Cache(
             size=l2_size,
@@ -342,7 +343,8 @@ class L1L2Hierarchy(AbstractCacheHierarchy):
             self.l2_cache.prefetcher = prefetcher_mapping(args.l2_prefetcher_type)
 
     def incorporate_cache(self, board):
-        self.l2_cache.mem_side = board.get_mem_ports()[0][1]
+        self.membus.mem_side_ports = board.get_mem_ports()[0][1]
+        self.l2_cache.mem_side = self.membus.cpu_side_ports
         self.l2_bus.mem_side_ports = self.l2_cache.cpu_side
         for i in range(args.num_cores):
             self.l1_icaches[i].mem_side = self.l2_bus.cpu_side_ports

@@ -76,11 +76,11 @@ L1_SIZES=("16kB" "32kB" "64kB")
 L1_ASSOCS=(2 4 8)
 L2_SIZES=("128kB" "256kB" "512kB" "1MB")
 L2_ASSOCS=(8 16)
-REPLACEMENT_POLICIES=("LRU" "Random") # Add others like 'BIP' if desired
+REPLACEMENT_POLICIES=("LRU" "Random" "LFU") # Add others like 'BIP' if desired
 
 # Speculation parameters
 BRANCH_PREDICTORS=("BiModeBP" "LocalBP" "TournamentBP")
-
+L2_PREFETCHERS=("TaggedPrefetcher" "DCPTPrefetcher")
 
 # --- Step 3: Run Simulation Sweeps ---
 # The script will now iterate through each parameter set for each workload.
@@ -118,7 +118,8 @@ BASELINE_ARGS="--ROB-entries=192 --issue-width=4 --commit-width=4 \
 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU \
 --l1d-replace-policy=LRU --l2-replace-policy=LRU \
 --branch-predictor-enable --branch-predictor-type=TournamentBP \
---mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher"
+--mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher \
+--l2-prefetcher-type=TaggedPrefetcher"
 
 
 # Outer loop: Iterate over each workload
