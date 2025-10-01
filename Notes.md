@@ -77,3 +77,31 @@ may check the assignemnt ones, those are good.
 ## Note on Res
 
 - L2 Hit rate is much lesser than L1 because of the fact that only more difficult to search addresses access reach L2. 
+
+## Metrics to collect
+
+- instructions:
+    - simInsts
+- ipc:
+    - board.processor.cores.core.ipc
+- cache stats:
+    - l1d
+        - board.cache_hierarchy.l1_dcaches.demandHits::processor.cores.core.data
+        - board.cache_hierarchy.l1_dcaches.demandMisses::processor.cores.core.data
+    - l1i
+        - board.cache_hierarchy.l1_icaches.demandHits::processor.cores.core.inst
+        - board.cache_hierarchy.l1_icaches.demandMisses::processor.cores.core.inst
+    - l2
+        - board.cache_hierarchy.l2_cache.overallHits::cache_hierarchy.l1_dcaches.prefetcher
+        - bboard.cache_hierarchy.l2_cache.overallHits::processor.cores.core.inst
+        - board.cache_hierarchy.l2_cache.overallHits::processor.cores.core.data
+        - board.cache_hierarchy.l2_cache.overallHits::total
+        - board.cache_hierarchy.l2_cache.overallMisses::cache_hierarchy.l1_dcaches.prefetcher
+        - board.cache_hierarchy.l2_cache.overallMisses::processor.cores.core.inst
+        - board.cache_hierarchy.l2_cache.overallMisses::processor.cores.core.data
+        - board.cache_hierarchy.l2_cache.overallMisses::total
+
+        - board.cache_hierarchy.l2_cache.overallAccesses::cache_hierarchy.l1_dcaches.prefetcher
+        - board.cache_hierarchy.l2_cache.overallAccesses::processor.cores.core.inst
+        - board.cache_hierarchy.l2_cache.overallAccesses::processor.cores.core.data
+        - board.cache_hierarchy.l2_cache.overallAccesses::total

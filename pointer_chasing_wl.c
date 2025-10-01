@@ -5,7 +5,7 @@
 
 // The total number of nodes in our memory pool.
 // This should be large enough to exceed the L2 cache size to stress main memory.
-#define NUM_NODES (1024 * 8) // 1M nodes
+#define NUM_NODES (1024 * 512) // 1M nodes
 
 // The number of pointer-chasing operations to perform.
 #define NUM_TRAVERSALS (NUM_NODES * 4)

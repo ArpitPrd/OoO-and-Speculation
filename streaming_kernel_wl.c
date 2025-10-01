@@ -5,7 +5,7 @@
 // Define the size of the arrays.
 // 8M elements * 8 bytes/double * 3 arrays = 192 MB of data.
 // This is significantly larger than a typical L2 cache (e.g., 256KB - 4MB).
-#define ARRAY_SIZE (8 * 1024 )
+#define ARRAY_SIZE (512 * 1024 )
 
 // The number of times to repeat the main kernel loop.
 #define NUM_REPETITIONS 10

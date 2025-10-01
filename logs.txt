@@ -24,8 +24,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:33:58
-gem5 executing on arpit-linux, pid 79095
+gem5 started Oct  1 2025 13:00:28
+gem5 executing on arpit-linux, pid 18885
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/rob_64 test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --ROB-entries=64 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -37,8 +37,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4157652852 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41207672079 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/rob_64.
 
 -------------------------------------------------
@@ -58,8 +58,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:34:20
-gem5 executing on arpit-linux, pid 79556
+gem5 started Oct  1 2025 13:04:00
+gem5 executing on arpit-linux, pid 19311
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/rob_128 test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --ROB-entries=128 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -71,8 +71,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177366785 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41405712507 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/rob_128.
 
 -------------------------------------------------
@@ -92,8 +92,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:34:43
-gem5 executing on arpit-linux, pid 79703
+gem5 started Oct  1 2025 13:07:41
+gem5 executing on arpit-linux, pid 19628
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/rob_192 test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -105,8 +105,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/rob_192.
 
 -------------------------------------------------
@@ -126,8 +126,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:35:06
-gem5 executing on arpit-linux, pid 79915
+gem5 started Oct  1 2025 13:11:24
+gem5 executing on arpit-linux, pid 19892
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/rob_256 test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --ROB-entries=256 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -139,8 +139,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404460427 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/rob_256.
 
 -------------------------------------------------
@@ -160,8 +160,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:35:29
-gem5 executing on arpit-linux, pid 80064
+gem5 started Oct  1 2025 13:15:05
+gem5 executing on arpit-linux, pid 20203
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/width_2 test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --issue-width=2 --commit-width=2 --ROB-entries=192 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -173,8 +173,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4181816997 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41411102778 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/width_2.
 
 -------------------------------------------------
@@ -194,8 +194,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:35:52
-gem5 executing on arpit-linux, pid 80273
+gem5 started Oct  1 2025 13:18:47
+gem5 executing on arpit-linux, pid 20521
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/width_4 test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --issue-width=4 --commit-width=4 --ROB-entries=192 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -207,8 +207,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/width_4.
 
 -------------------------------------------------
@@ -228,8 +228,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:36:15
-gem5 executing on arpit-linux, pid 80421
+gem5 started Oct  1 2025 13:22:29
+gem5 executing on arpit-linux, pid 20782
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/width_8 test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --issue-width=8 --commit-width=8 --ROB-entries=192 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -241,8 +241,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177117368 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404449105 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/width_8.
 
 -------------------------------------------------
@@ -262,8 +262,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:36:38
-gem5 executing on arpit-linux, pid 80573
+gem5 started Oct  1 2025 13:26:10
+gem5 executing on arpit-linux, pid 21104
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l1_16kB_2way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l1i-size=16kB --l1d-size=16kB --l1i-assoc=2 --l1d-assoc=2 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -275,8 +275,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177116702 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41405159394 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l1_16kB_2way.
 
 -------------------------------------------------
@@ -296,8 +296,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:37:01
-gem5 executing on arpit-linux, pid 80792
+gem5 started Oct  1 2025 13:29:50
+gem5 executing on arpit-linux, pid 21415
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l1_16kB_4way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l1i-size=16kB --l1d-size=16kB --l1i-assoc=4 --l1d-assoc=4 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -309,8 +309,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177062090 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404402818 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l1_16kB_4way.
 
 -------------------------------------------------
@@ -330,8 +330,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:37:24
-gem5 executing on arpit-linux, pid 80944
+gem5 started Oct  1 2025 13:33:34
+gem5 executing on arpit-linux, pid 21745
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l1_16kB_8way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l1i-size=16kB --l1d-size=16kB --l1i-assoc=8 --l1d-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -343,8 +343,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177151334 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404518036 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l1_16kB_8way.
 
 -------------------------------------------------
@@ -364,8 +364,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:37:48
-gem5 executing on arpit-linux, pid 81156
+gem5 started Oct  1 2025 13:37:15
+gem5 executing on arpit-linux, pid 22008
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l1_32kB_2way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l1i-size=32kB --l1d-size=32kB --l1i-assoc=2 --l1d-assoc=2 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -377,8 +377,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177316835 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404706181 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l1_32kB_2way.
 
 -------------------------------------------------
@@ -398,8 +398,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:38:11
-gem5 executing on arpit-linux, pid 81315
+gem5 started Oct  1 2025 13:40:58
+gem5 executing on arpit-linux, pid 22326
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l1_32kB_4way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l1i-size=32kB --l1d-size=32kB --l1i-assoc=4 --l1d-assoc=4 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -411,8 +411,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l1_32kB_4way.
 
 -------------------------------------------------
@@ -432,8 +432,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:38:35
-gem5 executing on arpit-linux, pid 81467
+gem5 started Oct  1 2025 13:44:39
+gem5 executing on arpit-linux, pid 22639
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l1_32kB_8way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l1i-size=32kB --l1d-size=32kB --l1i-assoc=8 --l1d-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -445,8 +445,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l1_32kB_8way.
 
 -------------------------------------------------
@@ -466,8 +466,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:38:58
-gem5 executing on arpit-linux, pid 81787
+gem5 started Oct  1 2025 13:48:21
+gem5 executing on arpit-linux, pid 22960
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l1_64kB_2way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l1i-size=64kB --l1d-size=64kB --l1i-assoc=2 --l1d-assoc=2 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -479,8 +479,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177118700 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404468086 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l1_64kB_2way.
 
 -------------------------------------------------
@@ -500,8 +500,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:39:21
-gem5 executing on arpit-linux, pid 81943
+gem5 started Oct  1 2025 13:52:03
+gem5 executing on arpit-linux, pid 23244
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l1_64kB_4way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l1i-size=64kB --l1d-size=64kB --l1i-assoc=4 --l1d-assoc=4 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -513,8 +513,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4176892593 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404269618 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l1_64kB_4way.
 
 -------------------------------------------------
@@ -534,8 +534,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:39:45
-gem5 executing on arpit-linux, pid 82155
+gem5 started Oct  1 2025 13:55:44
+gem5 executing on arpit-linux, pid 23570
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l1_64kB_8way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l1i-size=64kB --l1d-size=64kB --l1i-assoc=8 --l1d-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -547,8 +547,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4176916236 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404306914 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l1_64kB_8way.
 
 -------------------------------------------------
@@ -568,8 +568,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:40:08
-gem5 executing on arpit-linux, pid 82309
+gem5 started Oct  1 2025 13:59:26
+gem5 executing on arpit-linux, pid 23877
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l2_128kB_8way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l2-size=128kB --l2-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -581,8 +581,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177240578 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404532355 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l2_128kB_8way.
 
 -------------------------------------------------
@@ -602,8 +602,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:40:31
-gem5 executing on arpit-linux, pid 82458
+gem5 started Oct  1 2025 14:03:06
+gem5 executing on arpit-linux, pid 24130
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l2_128kB_16way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l2-size=128kB --l2-assoc=16 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -615,8 +615,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177149336 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404522698 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l2_128kB_16way.
 
 -------------------------------------------------
@@ -636,8 +636,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:40:55
-gem5 executing on arpit-linux, pid 82666
+gem5 started Oct  1 2025 14:06:50
+gem5 executing on arpit-linux, pid 24445
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l2_256kB_8way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l2-size=256kB --l2-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -649,8 +649,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l2_256kB_8way.
 
 -------------------------------------------------
@@ -670,8 +670,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:41:18
-gem5 executing on arpit-linux, pid 82820
+gem5 started Oct  1 2025 14:10:32
+gem5 executing on arpit-linux, pid 24774
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l2_256kB_16way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l2-size=256kB --l2-assoc=16 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -683,8 +683,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l2_256kB_16way.
 
 -------------------------------------------------
@@ -704,8 +704,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:41:41
-gem5 executing on arpit-linux, pid 82970
+gem5 started Oct  1 2025 14:14:13
+gem5 executing on arpit-linux, pid 25096
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l2_512kB_8way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l2-size=512kB --l2-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -717,8 +717,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l2_512kB_8way.
 
 -------------------------------------------------
@@ -738,8 +738,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:42:04
-gem5 executing on arpit-linux, pid 83180
+gem5 started Oct  1 2025 14:17:53
+gem5 executing on arpit-linux, pid 25363
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l2_512kB_16way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l2-size=512kB --l2-assoc=16 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -751,8 +751,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l2_512kB_16way.
 
 -------------------------------------------------
@@ -772,8 +772,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:42:28
-gem5 executing on arpit-linux, pid 83326
+gem5 started Oct  1 2025 14:21:36
+gem5 executing on arpit-linux, pid 25679
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l2_1MB_8way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l2-size=1MB --l2-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -785,8 +785,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l2_1MB_8way.
 
 -------------------------------------------------
@@ -806,8 +806,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:42:51
-gem5 executing on arpit-linux, pid 83530
+gem5 started Oct  1 2025 14:25:17
+gem5 executing on arpit-linux, pid 26006
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l2_1MB_16way test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l2-size=1MB --l2-assoc=16 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -819,8 +819,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l2_1MB_16way.
 
 -------------------------------------------------
@@ -840,8 +840,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:43:14
-gem5 executing on arpit-linux, pid 83675
+gem5 started Oct  1 2025 14:28:58
+gem5 executing on arpit-linux, pid 26317
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/policy_LRU test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -853,8 +853,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/policy_LRU.
 
 -------------------------------------------------
@@ -874,8 +874,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:43:37
-gem5 executing on arpit-linux, pid 83822
+gem5 started Oct  1 2025 14:32:41
+gem5 executing on arpit-linux, pid 26587
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/policy_Random test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l1i-replace-policy=Random --l1d-replace-policy=Random --l2-replace-policy=Random --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -887,9 +887,43 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4176863955 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404229325 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/policy_Random.
+
+-------------------------------------------------
+ WORKLOAD: compute_bound_workload
+ SAVING TO: results/compute_bound_workload/policy_LFU
+ PARAMS: --l1i-replace-policy=LFU --l1d-replace-policy=LFU --l2-replace-policy=LFU --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
+-------------------------------------------------
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 256kB will be cast to base 2 size 256KiB.
+Global frequency set at 1000000000000 ticks per second
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 24.1.0.3
+gem5 compiled Sep 28 2025 00:02:15
+gem5 started Oct  1 2025 14:36:25
+gem5 executing on arpit-linux, pid 26912
+command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/policy_LFU test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l1i-replace-policy=LFU --l1d-replace-policy=LFU --l2-replace-policy=LFU --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
+
+info: Standard input is not a terminal, disabling listeners.
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/sim/syscall_emul.cc:97: warn: ignoring syscall set_robust_list(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/arpit/Desktop/iitd/sem_7/COL718/projects/OoO-and-Speculation/compute_bound_workload'
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+Starting compute-bound workload...
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41405075811 because exiting with last active thread context.
+Simulation finished for results/compute_bound_workload/policy_LFU.
 
 -------------------------------------------------
  WORKLOAD: compute_bound_workload
@@ -908,8 +942,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:44:01
-gem5 executing on arpit-linux, pid 84035
+gem5 started Oct  1 2025 14:40:06
+gem5 executing on arpit-linux, pid 27221
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/branch_spec_off test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -921,8 +955,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/branch_spec_off.
 
 -------------------------------------------------
@@ -942,8 +976,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:44:24
-gem5 executing on arpit-linux, pid 84180
+gem5 started Oct  1 2025 14:43:49
+gem5 executing on arpit-linux, pid 27502
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/branch_spec_BiModeBP test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --branch-predictor-type=BiModeBP --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -955,8 +989,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4171809348 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41400337554 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/branch_spec_BiModeBP.
 
 -------------------------------------------------
@@ -976,8 +1010,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:44:47
-gem5 executing on arpit-linux, pid 84387
+gem5 started Oct  1 2025 14:47:31
+gem5 executing on arpit-linux, pid 27848
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/branch_spec_LocalBP test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --branch-predictor-type=LocalBP --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -989,8 +1023,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4173563592 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41401969587 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/branch_spec_LocalBP.
 
 -------------------------------------------------
@@ -1010,8 +1044,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:45:10
-gem5 executing on arpit-linux, pid 84539
+gem5 started Oct  1 2025 14:51:13
+gem5 executing on arpit-linux, pid 28172
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/branch_spec_TournamentBP test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --branch-predictor-type=TournamentBP --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1023,8 +1057,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/branch_spec_TournamentBP.
 
 -------------------------------------------------
@@ -1044,8 +1078,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:45:33
-gem5 executing on arpit-linux, pid 84692
+gem5 started Oct  1 2025 14:54:55
+gem5 executing on arpit-linux, pid 28494
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/mem_spec_off test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1057,8 +1091,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4511112705 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 44731666890 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/mem_spec_off.
 
 -------------------------------------------------
@@ -1078,8 +1112,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:45:56
-gem5 executing on arpit-linux, pid 84895
+gem5 started Oct  1 2025 14:58:40
+gem5 executing on arpit-linux, pid 28752
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/mem_spec_on test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1091,8 +1125,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/mem_spec_on.
 
 -------------------------------------------------
@@ -1112,8 +1146,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:46:19
-gem5 executing on arpit-linux, pid 85047
+gem5 started Oct  1 2025 15:02:23
+gem5 executing on arpit-linux, pid 29147
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/prefetcher_off test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l1d-prefetcher-type=None --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1125,8 +1159,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4183354791 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41410699848 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/prefetcher_off.
 
 -------------------------------------------------
@@ -1146,8 +1180,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:46:42
-gem5 executing on arpit-linux, pid 85253
+gem5 started Oct  1 2025 15:06:06
+gem5 executing on arpit-linux, pid 29482
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/prefetcher_on test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1159,8 +1193,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/prefetcher_on.
 
 -------------------------------------------------
@@ -1180,8 +1214,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:47:06
-gem5 executing on arpit-linux, pid 85402
+gem5 started Oct  1 2025 15:09:47
+gem5 executing on arpit-linux, pid 29784
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l2_prefetcher_off test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l2-prefetcher-type=None --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1193,8 +1227,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l2_prefetcher_off.
 
 -------------------------------------------------
@@ -1214,8 +1248,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:47:29
-gem5 executing on arpit-linux, pid 85550
+gem5 started Oct  1 2025 15:13:28
+gem5 executing on arpit-linux, pid 30040
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l2_prefetcher_TaggedPrefetcher test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l2-prefetcher-type=TaggedPrefetcher --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1227,8 +1261,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l2_prefetcher_TaggedPrefetcher.
 
 -------------------------------------------------
@@ -1248,8 +1282,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:47:52
-gem5 executing on arpit-linux, pid 85757
+gem5 started Oct  1 2025 15:17:10
+gem5 executing on arpit-linux, pid 30367
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/compute_bound_workload/l2_prefetcher_DCPTPrefetcher test.py --isa=RISCV --binary=compute_bound_workload --cpu-type=O3 --l2-prefetcher-type=DCPTPrefetcher --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1261,8 +1295,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting compute-bound workload...
-Compute-bound workload complete. Final result (to prevent optimization): -3.759111
-Exiting @ tick 4177109043 because exiting with last active thread context.
+Compute-bound workload complete. Final result (to prevent optimization): -47.596219
+Exiting @ tick 41404466421 because exiting with last active thread context.
 Simulation finished for results/compute_bound_workload/l2_prefetcher_DCPTPrefetcher.
 
 -------------------------------------------------
@@ -1282,8 +1316,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:48:15
-gem5 executing on arpit-linux, pid 85915
+gem5 started Oct  1 2025 15:20:52
+gem5 executing on arpit-linux, pid 30680
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/rob_64 test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --ROB-entries=64 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1295,8 +1329,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2343468186 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274255189281 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/rob_64.
 
 -------------------------------------------------
@@ -1316,8 +1350,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:48:23
-gem5 executing on arpit-linux, pid 86064
+gem5 started Oct  1 2025 15:30:12
+gem5 executing on arpit-linux, pid 31406
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/rob_128 test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --ROB-entries=128 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1329,8 +1363,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2344503150 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274782155121 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/rob_128.
 
 -------------------------------------------------
@@ -1350,8 +1384,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:48:30
-gem5 executing on arpit-linux, pid 86160
+gem5 started Oct  1 2025 15:39:43
+gem5 executing on arpit-linux, pid 32178
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/rob_192 test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1363,8 +1397,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2344392261 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274797628965 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/rob_192.
 
 -------------------------------------------------
@@ -1384,8 +1418,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:48:37
-gem5 executing on arpit-linux, pid 86267
+gem5 started Oct  1 2025 15:49:15
+gem5 executing on arpit-linux, pid 33694
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/rob_256 test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --ROB-entries=256 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1397,8 +1431,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2345976342 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274809066516 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/rob_256.
 
 -------------------------------------------------
@@ -1418,8 +1452,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:48:44
-gem5 executing on arpit-linux, pid 86450
+gem5 started Oct  1 2025 15:58:46
+gem5 executing on arpit-linux, pid 34491
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/width_2 test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --issue-width=2 --commit-width=2 --ROB-entries=192 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1431,8 +1465,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2396692242 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 277206730119 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/width_2.
 
 -------------------------------------------------
@@ -1452,8 +1486,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:48:52
-gem5 executing on arpit-linux, pid 86558
+gem5 started Oct  1 2025 16:08:19
+gem5 executing on arpit-linux, pid 35296
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/width_4 test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --issue-width=4 --commit-width=4 --ROB-entries=192 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1465,8 +1499,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2344392261 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274797628965 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/width_4.
 
 -------------------------------------------------
@@ -1486,8 +1520,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:48:59
-gem5 executing on arpit-linux, pid 86680
+gem5 started Oct  1 2025 16:17:51
+gem5 executing on arpit-linux, pid 36009
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/width_8 test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --issue-width=8 --commit-width=8 --ROB-entries=192 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1499,8 +1533,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2337663663 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 273883279896 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/width_8.
 
 -------------------------------------------------
@@ -1520,8 +1554,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:49:06
-gem5 executing on arpit-linux, pid 86764
+gem5 started Oct  1 2025 16:27:21
+gem5 executing on arpit-linux, pid 36772
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l1_16kB_2way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l1i-size=16kB --l1d-size=16kB --l1i-assoc=2 --l1d-assoc=2 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1533,8 +1567,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2342889099 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 275156215353 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l1_16kB_2way.
 
 -------------------------------------------------
@@ -1554,8 +1588,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:49:13
-gem5 executing on arpit-linux, pid 86915
+gem5 started Oct  1 2025 16:36:55
+gem5 executing on arpit-linux, pid 37505
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l1_16kB_4way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l1i-size=16kB --l1d-size=16kB --l1i-assoc=4 --l1d-assoc=4 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1567,8 +1601,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2336827500 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274918908897 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l1_16kB_4way.
 
 -------------------------------------------------
@@ -1588,8 +1622,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:49:20
-gem5 executing on arpit-linux, pid 86998
+gem5 started Oct  1 2025 16:46:28
+gem5 executing on arpit-linux, pid 38306
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l1_16kB_8way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l1i-size=16kB --l1d-size=16kB --l1i-assoc=8 --l1d-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1601,8 +1635,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2339265060 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274911165981 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l1_16kB_8way.
 
 -------------------------------------------------
@@ -1622,8 +1656,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:49:28
-gem5 executing on arpit-linux, pid 87149
+gem5 started Oct  1 2025 16:55:59
+gem5 executing on arpit-linux, pid 39096
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l1_32kB_2way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l1i-size=32kB --l1d-size=32kB --l1i-assoc=2 --l1d-assoc=2 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1635,8 +1669,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2340066258 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274810248999 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l1_32kB_2way.
 
 -------------------------------------------------
@@ -1656,8 +1690,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:49:35
-gem5 executing on arpit-linux, pid 87233
+gem5 started Oct  1 2025 17:05:28
+gem5 executing on arpit-linux, pid 39804
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l1_32kB_4way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l1i-size=32kB --l1d-size=32kB --l1i-assoc=4 --l1d-assoc=4 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1669,8 +1703,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2339592399 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274809567348 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l1_32kB_4way.
 
 -------------------------------------------------
@@ -1690,8 +1724,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:49:42
-gem5 executing on arpit-linux, pid 87403
+gem5 started Oct  1 2025 17:15:01
+gem5 executing on arpit-linux, pid 40562
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l1_32kB_8way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l1i-size=32kB --l1d-size=32kB --l1i-assoc=8 --l1d-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1703,8 +1737,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2344392261 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274797628965 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l1_32kB_8way.
 
 -------------------------------------------------
@@ -1724,8 +1758,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:49:50
-gem5 executing on arpit-linux, pid 87526
+gem5 started Oct  1 2025 17:24:31
+gem5 executing on arpit-linux, pid 41287
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l1_64kB_2way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l1i-size=64kB --l1d-size=64kB --l1i-assoc=2 --l1d-assoc=2 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1737,8 +1771,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2355312663 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274210554960 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l1_64kB_2way.
 
 -------------------------------------------------
@@ -1758,8 +1792,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:49:57
-gem5 executing on arpit-linux, pid 87636
+gem5 started Oct  1 2025 17:34:01
+gem5 executing on arpit-linux, pid 42077
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l1_64kB_4way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l1i-size=64kB --l1d-size=64kB --l1i-assoc=4 --l1d-assoc=4 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1771,8 +1805,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2358992313 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274511814399 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l1_64kB_4way.
 
 -------------------------------------------------
@@ -1792,8 +1826,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:50:04
-gem5 executing on arpit-linux, pid 87765
+gem5 started Oct  1 2025 17:43:30
+gem5 executing on arpit-linux, pid 42856
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l1_64kB_8way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l1i-size=64kB --l1d-size=64kB --l1i-assoc=8 --l1d-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1805,8 +1839,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2354334975 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274512738807 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l1_64kB_8way.
 
 -------------------------------------------------
@@ -1826,8 +1860,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:50:11
-gem5 executing on arpit-linux, pid 87872
+gem5 started Oct  1 2025 17:53:02
+gem5 executing on arpit-linux, pid 43581
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l2_128kB_8way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l2-size=128kB --l2-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1839,8 +1873,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 3018585726 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 281322258804 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l2_128kB_8way.
 
 -------------------------------------------------
@@ -1860,8 +1894,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:50:20
-gem5 executing on arpit-linux, pid 87995
+gem5 started Oct  1 2025 18:02:43
+gem5 executing on arpit-linux, pid 44438
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l2_128kB_16way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l2-size=128kB --l2-assoc=16 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1873,8 +1907,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 3029355945 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 281501818731 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l2_128kB_16way.
 
 -------------------------------------------------
@@ -1894,8 +1928,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:50:28
-gem5 executing on arpit-linux, pid 88140
+gem5 started Oct  1 2025 18:12:24
+gem5 executing on arpit-linux, pid 45223
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l2_256kB_8way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l2-size=256kB --l2-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1907,8 +1941,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2327453550 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274854260277 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l2_256kB_8way.
 
 -------------------------------------------------
@@ -1928,8 +1962,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:50:35
-gem5 executing on arpit-linux, pid 88226
+gem5 started Oct  1 2025 18:21:56
+gem5 executing on arpit-linux, pid 45936
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l2_256kB_16way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l2-size=256kB --l2-assoc=16 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1941,8 +1975,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2344392261 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274797628965 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l2_256kB_16way.
 
 -------------------------------------------------
@@ -1962,8 +1996,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:50:42
-gem5 executing on arpit-linux, pid 88394
+gem5 started Oct  1 2025 18:31:31
+gem5 executing on arpit-linux, pid 46710
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l2_512kB_8way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l2-size=512kB --l2-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -1975,8 +2009,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 881092692 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 264858836706 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l2_512kB_8way.
 
 -------------------------------------------------
@@ -1996,8 +2030,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:50:47
-gem5 executing on arpit-linux, pid 88490
+gem5 started Oct  1 2025 18:40:49
+gem5 executing on arpit-linux, pid 47423
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l2_512kB_16way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l2-size=512kB --l2-assoc=16 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2009,8 +2043,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 862782354 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 264757897746 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l2_512kB_16way.
 
 -------------------------------------------------
@@ -2030,8 +2064,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:50:53
-gem5 executing on arpit-linux, pid 88592
+gem5 started Oct  1 2025 18:50:08
+gem5 executing on arpit-linux, pid 48208
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l2_1MB_8way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l2-size=1MB --l2-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2043,8 +2077,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 857194947 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 251941443696 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l2_1MB_8way.
 
 -------------------------------------------------
@@ -2064,8 +2098,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:50:58
-gem5 executing on arpit-linux, pid 88673
+gem5 started Oct  1 2025 18:59:12
+gem5 executing on arpit-linux, pid 48926
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l2_1MB_16way test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l2-size=1MB --l2-assoc=16 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2077,8 +2111,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 857194947 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 252012072996 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l2_1MB_16way.
 
 -------------------------------------------------
@@ -2098,8 +2132,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:51:03
-gem5 executing on arpit-linux, pid 88756
+gem5 started Oct  1 2025 19:08:17
+gem5 executing on arpit-linux, pid 49636
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/policy_LRU test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2111,8 +2145,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2344392261 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274797628965 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/policy_LRU.
 
 -------------------------------------------------
@@ -2132,8 +2166,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:51:10
-gem5 executing on arpit-linux, pid 88842
+gem5 started Oct  1 2025 19:17:48
+gem5 executing on arpit-linux, pid 50417
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/policy_Random test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l1i-replace-policy=Random --l1d-replace-policy=Random --l2-replace-policy=Random --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2145,9 +2179,43 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2237184909 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274075846470 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/policy_Random.
+
+-------------------------------------------------
+ WORKLOAD: pointer_chaser_workload
+ SAVING TO: results/pointer_chaser_workload/policy_LFU
+ PARAMS: --l1i-replace-policy=LFU --l1d-replace-policy=LFU --l2-replace-policy=LFU --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
+-------------------------------------------------
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 256kB will be cast to base 2 size 256KiB.
+Global frequency set at 1000000000000 ticks per second
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 24.1.0.3
+gem5 compiled Sep 28 2025 00:02:15
+gem5 started Oct  1 2025 19:27:22
+gem5 executing on arpit-linux, pid 51148
+command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/policy_LFU test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l1i-replace-policy=LFU --l1d-replace-policy=LFU --l2-replace-policy=LFU --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
+
+info: Standard input is not a terminal, disabling listeners.
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/sim/syscall_emul.cc:97: warn: ignoring syscall set_robust_list(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/arpit/Desktop/iitd/sem_7/COL718/projects/OoO-and-Speculation/pointer_chaser_workload'
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+Starting pointer chasing traversal...
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 283136403177 because exiting with last active thread context.
+Simulation finished for results/pointer_chaser_workload/policy_LFU.
 
 -------------------------------------------------
  WORKLOAD: pointer_chaser_workload
@@ -2166,8 +2234,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:51:17
-gem5 executing on arpit-linux, pid 88950
+gem5 started Oct  1 2025 19:37:05
+gem5 executing on arpit-linux, pid 52569
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/branch_spec_off test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2179,8 +2247,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2344392261 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274797628965 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/branch_spec_off.
 
 -------------------------------------------------
@@ -2200,8 +2268,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:51:24
-gem5 executing on arpit-linux, pid 89071
+gem5 started Oct  1 2025 19:46:36
+gem5 executing on arpit-linux, pid 53361
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/branch_spec_BiModeBP test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --branch-predictor-type=BiModeBP --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2213,8 +2281,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2335685643 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274781962647 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/branch_spec_BiModeBP.
 
 -------------------------------------------------
@@ -2234,8 +2302,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:51:32
-gem5 executing on arpit-linux, pid 89179
+gem5 started Oct  1 2025 19:56:06
+gem5 executing on arpit-linux, pid 54087
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/branch_spec_LocalBP test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --branch-predictor-type=LocalBP --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2247,8 +2315,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2341391265 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274773813471 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/branch_spec_LocalBP.
 
 -------------------------------------------------
@@ -2268,8 +2336,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:51:39
-gem5 executing on arpit-linux, pid 89359
+gem5 started Oct  1 2025 20:05:40
+gem5 executing on arpit-linux, pid 54858
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/branch_spec_TournamentBP test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --branch-predictor-type=TournamentBP --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2281,8 +2349,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2344392261 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274797628965 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/branch_spec_TournamentBP.
 
 -------------------------------------------------
@@ -2302,8 +2370,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:51:46
-gem5 executing on arpit-linux, pid 89440
+gem5 started Oct  1 2025 20:15:13
+gem5 executing on arpit-linux, pid 55576
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/mem_spec_off test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2315,8 +2383,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2842782039 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 290453818437 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/mem_spec_off.
 
 -------------------------------------------------
@@ -2336,8 +2404,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:51:54
-gem5 executing on arpit-linux, pid 89583
+gem5 started Oct  1 2025 20:25:06
+gem5 executing on arpit-linux, pid 56342
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/mem_spec_on test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2349,8 +2417,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2344392261 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274797628965 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/mem_spec_on.
 
 -------------------------------------------------
@@ -2370,8 +2438,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:52:01
-gem5 executing on arpit-linux, pid 89665
+gem5 started Oct  1 2025 20:34:39
+gem5 executing on arpit-linux, pid 57113
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/prefetcher_off test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l1d-prefetcher-type=None --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2383,8 +2451,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2350490490 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 275494028535 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/prefetcher_off.
 
 -------------------------------------------------
@@ -2404,8 +2472,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:52:08
-gem5 executing on arpit-linux, pid 89802
+gem5 started Oct  1 2025 20:44:08
+gem5 executing on arpit-linux, pid 57887
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/prefetcher_on test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2417,8 +2485,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2344392261 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274797628965 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/prefetcher_on.
 
 -------------------------------------------------
@@ -2438,8 +2506,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:52:15
-gem5 executing on arpit-linux, pid 89887
+gem5 started Oct  1 2025 20:53:41
+gem5 executing on arpit-linux, pid 58617
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l2_prefetcher_off test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l2-prefetcher-type=None --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2451,8 +2519,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2344392261 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274797628965 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l2_prefetcher_off.
 
 -------------------------------------------------
@@ -2472,8 +2540,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:52:23
-gem5 executing on arpit-linux, pid 90031
+gem5 started Oct  1 2025 21:03:13
+gem5 executing on arpit-linux, pid 59465
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l2_prefetcher_TaggedPrefetcher test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l2-prefetcher-type=TaggedPrefetcher --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2485,8 +2553,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2344392261 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274797628965 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l2_prefetcher_TaggedPrefetcher.
 
 -------------------------------------------------
@@ -2506,8 +2574,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:52:30
-gem5 executing on arpit-linux, pid 90115
+gem5 started Oct  1 2025 21:12:44
+gem5 executing on arpit-linux, pid 60188
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/pointer_chaser_workload/l2_prefetcher_DCPTPrefetcher test.py --isa=RISCV --binary=pointer_chaser_workload --cpu-type=O3 --l2-prefetcher-type=DCPTPrefetcher --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2519,8 +2587,8 @@ src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yi
 src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting pointer chasing traversal...
-Traversal complete. Final sum (to prevent optimization): 134201344
-Exiting @ tick 2344392261 because exiting with last active thread context.
+Traversal complete. Final sum (to prevent optimization): 549754765312
+Exiting @ tick 274797628965 because exiting with last active thread context.
 Simulation finished for results/pointer_chaser_workload/l2_prefetcher_DCPTPrefetcher.
 
 -------------------------------------------------
@@ -2540,8 +2608,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:52:37
-gem5 executing on arpit-linux, pid 90282
+gem5 started Oct  1 2025 21:22:15
+gem5 executing on arpit-linux, pid 61006
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/rob_64 test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --ROB-entries=64 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2554,7 +2622,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 260639100 because exiting with last active thread context.
+Exiting @ tick 24723743175 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/rob_64.
 
 -------------------------------------------------
@@ -2574,8 +2642,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:52:41
-gem5 executing on arpit-linux, pid 90335
+gem5 started Oct  1 2025 21:25:45
+gem5 executing on arpit-linux, pid 61313
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/rob_128 test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --ROB-entries=128 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2588,7 +2656,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 253118295 because exiting with last active thread context.
+Exiting @ tick 24505809327 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/rob_128.
 
 -------------------------------------------------
@@ -2608,8 +2676,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:52:45
-gem5 executing on arpit-linux, pid 90415
+gem5 started Oct  1 2025 21:29:14
+gem5 executing on arpit-linux, pid 61562
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/rob_192 test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2622,7 +2690,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252996750 because exiting with last active thread context.
+Exiting @ tick 24618251772 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/rob_192.
 
 -------------------------------------------------
@@ -2642,8 +2710,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:52:48
-gem5 executing on arpit-linux, pid 90491
+gem5 started Oct  1 2025 21:32:43
+gem5 executing on arpit-linux, pid 61876
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/rob_256 test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --ROB-entries=256 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2656,7 +2724,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 253024056 because exiting with last active thread context.
+Exiting @ tick 24477800364 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/rob_256.
 
 -------------------------------------------------
@@ -2676,8 +2744,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:52:52
-gem5 executing on arpit-linux, pid 90536
+gem5 started Oct  1 2025 21:36:13
+gem5 executing on arpit-linux, pid 62142
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/width_2 test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --issue-width=2 --commit-width=2 --ROB-entries=192 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2690,7 +2758,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 409778145 because exiting with last active thread context.
+Exiting @ tick 27502448688 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/width_2.
 
 -------------------------------------------------
@@ -2710,8 +2778,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:52:56
-gem5 executing on arpit-linux, pid 90590
+gem5 started Oct  1 2025 21:39:45
+gem5 executing on arpit-linux, pid 62484
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/width_4 test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --issue-width=4 --commit-width=4 --ROB-entries=192 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2724,7 +2792,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252996750 because exiting with last active thread context.
+Exiting @ tick 24618251772 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/width_4.
 
 -------------------------------------------------
@@ -2744,8 +2812,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:00
-gem5 executing on arpit-linux, pid 90672
+gem5 started Oct  1 2025 21:43:14
+gem5 executing on arpit-linux, pid 62751
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/width_8 test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --issue-width=8 --commit-width=8 --ROB-entries=192 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2758,7 +2826,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 248122296 because exiting with last active thread context.
+Exiting @ tick 24816910581 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/width_8.
 
 -------------------------------------------------
@@ -2778,8 +2846,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:03
-gem5 executing on arpit-linux, pid 90752
+gem5 started Oct  1 2025 21:46:45
+gem5 executing on arpit-linux, pid 63075
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l1_16kB_2way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l1i-size=16kB --l1d-size=16kB --l1i-assoc=2 --l1d-assoc=2 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2792,7 +2860,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 253795617 because exiting with last active thread context.
+Exiting @ tick 24833140668 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l1_16kB_2way.
 
 -------------------------------------------------
@@ -2812,8 +2880,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:07
-gem5 executing on arpit-linux, pid 90798
+gem5 started Oct  1 2025 21:50:14
+gem5 executing on arpit-linux, pid 63364
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l1_16kB_4way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l1i-size=16kB --l1d-size=16kB --l1i-assoc=4 --l1d-assoc=4 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2826,7 +2894,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 253627785 because exiting with last active thread context.
+Exiting @ tick 24881202225 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l1_16kB_4way.
 
 -------------------------------------------------
@@ -2846,8 +2914,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:11
-gem5 executing on arpit-linux, pid 90856
+gem5 started Oct  1 2025 21:53:42
+gem5 executing on arpit-linux, pid 63676
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l1_16kB_8way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l1i-size=16kB --l1d-size=16kB --l1i-assoc=8 --l1d-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2860,7 +2928,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 253609803 because exiting with last active thread context.
+Exiting @ tick 24482480013 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l1_16kB_8way.
 
 -------------------------------------------------
@@ -2880,8 +2948,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:14
-gem5 executing on arpit-linux, pid 90938
+gem5 started Oct  1 2025 21:57:10
+gem5 executing on arpit-linux, pid 63936
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l1_32kB_2way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l1i-size=32kB --l1d-size=32kB --l1i-assoc=2 --l1d-assoc=2 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2894,7 +2962,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 253501578 because exiting with last active thread context.
+Exiting @ tick 24434982558 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l1_32kB_2way.
 
 -------------------------------------------------
@@ -2914,8 +2982,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:18
-gem5 executing on arpit-linux, pid 91018
+gem5 started Oct  1 2025 22:00:38
+gem5 executing on arpit-linux, pid 64265
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l1_32kB_4way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l1i-size=32kB --l1d-size=32kB --l1i-assoc=4 --l1d-assoc=4 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2928,7 +2996,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 253199547 because exiting with last active thread context.
+Exiting @ tick 24756436116 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l1_32kB_4way.
 
 -------------------------------------------------
@@ -2948,8 +3016,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:22
-gem5 executing on arpit-linux, pid 91065
+gem5 started Oct  1 2025 22:04:08
+gem5 executing on arpit-linux, pid 64520
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l1_32kB_8way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l1i-size=32kB --l1d-size=32kB --l1i-assoc=8 --l1d-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2962,7 +3030,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252996750 because exiting with last active thread context.
+Exiting @ tick 24618251772 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l1_32kB_8way.
 
 -------------------------------------------------
@@ -2982,8 +3050,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:25
-gem5 executing on arpit-linux, pid 91121
+gem5 started Oct  1 2025 22:07:37
+gem5 executing on arpit-linux, pid 64846
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l1_64kB_2way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l1i-size=64kB --l1d-size=64kB --l1i-assoc=2 --l1d-assoc=2 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -2996,7 +3064,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 253051362 because exiting with last active thread context.
+Exiting @ tick 24673670631 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l1_64kB_2way.
 
 -------------------------------------------------
@@ -3016,8 +3084,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:29
-gem5 executing on arpit-linux, pid 91200
+gem5 started Oct  1 2025 22:11:06
+gem5 executing on arpit-linux, pid 65110
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l1_64kB_4way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l1i-size=64kB --l1d-size=64kB --l1i-assoc=4 --l1d-assoc=4 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3030,7 +3098,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252965781 because exiting with last active thread context.
+Exiting @ tick 24890682402 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l1_64kB_4way.
 
 -------------------------------------------------
@@ -3050,8 +3118,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:33
-gem5 executing on arpit-linux, pid 91284
+gem5 started Oct  1 2025 22:14:35
+gem5 executing on arpit-linux, pid 65425
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l1_64kB_8way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l1i-size=64kB --l1d-size=64kB --l1i-assoc=8 --l1d-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3064,7 +3132,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 253041372 because exiting with last active thread context.
+Exiting @ tick 24505528275 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l1_64kB_8way.
 
 -------------------------------------------------
@@ -3084,8 +3152,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:36
-gem5 executing on arpit-linux, pid 91388
+gem5 started Oct  1 2025 22:18:05
+gem5 executing on arpit-linux, pid 65696
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l2_128kB_8way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l2-size=128kB --l2-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3098,7 +3166,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 397842759 because exiting with last active thread context.
+Exiting @ tick 24543875889 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l2_128kB_8way.
 
 -------------------------------------------------
@@ -3118,8 +3186,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:41
-gem5 executing on arpit-linux, pid 91443
+gem5 started Oct  1 2025 22:21:33
+gem5 executing on arpit-linux, pid 66025
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l2_128kB_16way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l2-size=128kB --l2-assoc=16 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3132,7 +3200,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 402650613 because exiting with last active thread context.
+Exiting @ tick 24597389988 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l2_128kB_16way.
 
 -------------------------------------------------
@@ -3152,8 +3220,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:45
-gem5 executing on arpit-linux, pid 91524
+gem5 started Oct  1 2025 22:25:03
+gem5 executing on arpit-linux, pid 66280
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l2_256kB_8way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l2-size=256kB --l2-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3166,7 +3234,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 253181232 because exiting with last active thread context.
+Exiting @ tick 24826651830 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l2_256kB_8way.
 
 -------------------------------------------------
@@ -3186,8 +3254,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:48
-gem5 executing on arpit-linux, pid 91601
+gem5 started Oct  1 2025 22:28:31
+gem5 executing on arpit-linux, pid 66604
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l2_256kB_16way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l2-size=256kB --l2-assoc=16 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3200,7 +3268,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252996750 because exiting with last active thread context.
+Exiting @ tick 24618251772 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l2_256kB_16way.
 
 -------------------------------------------------
@@ -3220,8 +3288,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:52
-gem5 executing on arpit-linux, pid 91647
+gem5 started Oct  1 2025 22:32:00
+gem5 executing on arpit-linux, pid 66864
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l2_512kB_8way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l2-size=512kB --l2-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3234,7 +3302,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252138276 because exiting with last active thread context.
+Exiting @ tick 24968973699 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l2_512kB_8way.
 
 -------------------------------------------------
@@ -3254,8 +3322,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:56
-gem5 executing on arpit-linux, pid 91701
+gem5 started Oct  1 2025 22:35:30
+gem5 executing on arpit-linux, pid 67196
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l2_512kB_16way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l2-size=512kB --l2-assoc=16 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3268,7 +3336,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252138276 because exiting with last active thread context.
+Exiting @ tick 24838843959 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l2_512kB_16way.
 
 -------------------------------------------------
@@ -3288,8 +3356,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:53:59
-gem5 executing on arpit-linux, pid 91778
+gem5 started Oct  1 2025 22:39:00
+gem5 executing on arpit-linux, pid 67445
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l2_1MB_8way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l2-size=1MB --l2-assoc=8 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3302,7 +3370,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252138276 because exiting with last active thread context.
+Exiting @ tick 25586046009 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l2_1MB_8way.
 
 -------------------------------------------------
@@ -3322,8 +3390,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:54:03
-gem5 executing on arpit-linux, pid 91860
+gem5 started Oct  1 2025 22:42:30
+gem5 executing on arpit-linux, pid 67788
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l2_1MB_16way test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l2-size=1MB --l2-assoc=16 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3336,7 +3404,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252138276 because exiting with last active thread context.
+Exiting @ tick 25207848585 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l2_1MB_16way.
 
 -------------------------------------------------
@@ -3356,8 +3424,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:54:07
-gem5 executing on arpit-linux, pid 91905
+gem5 started Oct  1 2025 22:46:02
+gem5 executing on arpit-linux, pid 68106
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/policy_LRU test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3370,7 +3438,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252996750 because exiting with last active thread context.
+Exiting @ tick 24618251772 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/policy_LRU.
 
 -------------------------------------------------
@@ -3390,8 +3458,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:54:10
-gem5 executing on arpit-linux, pid 91961
+gem5 started Oct  1 2025 22:49:33
+gem5 executing on arpit-linux, pid 68375
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/policy_Random test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l1i-replace-policy=Random --l1d-replace-policy=Random --l2-replace-policy=Random --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3404,8 +3472,42 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 274337721 because exiting with last active thread context.
+Exiting @ tick 24801626547 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/policy_Random.
+
+-------------------------------------------------
+ WORKLOAD: streaming_workload
+ SAVING TO: results/streaming_workload/policy_LFU
+ PARAMS: --l1i-replace-policy=LFU --l1d-replace-policy=LFU --l2-replace-policy=LFU --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
+-------------------------------------------------
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 32kB will be cast to base 2 size 32KiB.
+warn: Base 10 memory/cache size 256kB will be cast to base 2 size 256KiB.
+Global frequency set at 1000000000000 ticks per second
+src/arch/riscv/isa.cc:279: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 24.1.0.3
+gem5 compiled Sep 28 2025 00:02:15
+gem5 started Oct  1 2025 22:53:06
+gem5 executing on arpit-linux, pid 68697
+command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/policy_LFU test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l1i-replace-policy=LFU --l1d-replace-policy=LFU --l2-replace-policy=LFU --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
+
+info: Standard input is not a terminal, disabling listeners.
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/sim/syscall_emul.cc:97: warn: ignoring syscall set_robust_list(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.hh:1117: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/home/arpit/Desktop/iitd/sem_7/COL718/projects/OoO-and-Speculation/streaming_workload'
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+Starting streaming memory access kernel...
+Streaming kernel complete. Result (to prevent optimization): 6.500000
+Exiting @ tick 52692936318 because exiting with last active thread context.
+Simulation finished for results/streaming_workload/policy_LFU.
 
 -------------------------------------------------
  WORKLOAD: streaming_workload
@@ -3424,8 +3526,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:54:14
-gem5 executing on arpit-linux, pid 92037
+gem5 started Oct  1 2025 22:57:41
+gem5 executing on arpit-linux, pid 69021
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/branch_spec_off test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3438,7 +3540,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252996750 because exiting with last active thread context.
+Exiting @ tick 24618251772 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/branch_spec_off.
 
 -------------------------------------------------
@@ -3458,8 +3560,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:54:18
-gem5 executing on arpit-linux, pid 92117
+gem5 started Oct  1 2025 23:01:11
+gem5 executing on arpit-linux, pid 69339
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/branch_spec_BiModeBP test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --branch-predictor-type=BiModeBP --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3472,7 +3574,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 247647105 because exiting with last active thread context.
+Exiting @ tick 24479248248 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/branch_spec_BiModeBP.
 
 -------------------------------------------------
@@ -3492,8 +3594,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:54:22
-gem5 executing on arpit-linux, pid 92161
+gem5 started Oct  1 2025 23:04:41
+gem5 executing on arpit-linux, pid 69585
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/branch_spec_LocalBP test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --branch-predictor-type=LocalBP --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3506,7 +3608,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 249085998 because exiting with last active thread context.
+Exiting @ tick 24662780199 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/branch_spec_LocalBP.
 
 -------------------------------------------------
@@ -3526,8 +3628,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:54:25
-gem5 executing on arpit-linux, pid 92214
+gem5 started Oct  1 2025 23:08:10
+gem5 executing on arpit-linux, pid 69907
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/branch_spec_TournamentBP test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --branch-predictor-type=TournamentBP --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3540,7 +3642,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252996750 because exiting with last active thread context.
+Exiting @ tick 24618251772 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/branch_spec_TournamentBP.
 
 -------------------------------------------------
@@ -3560,8 +3662,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:54:29
-gem5 executing on arpit-linux, pid 92290
+gem5 started Oct  1 2025 23:11:41
+gem5 executing on arpit-linux, pid 70170
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/mem_spec_off test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3574,7 +3676,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 638447247 because exiting with last active thread context.
+Exiting @ tick 39535658100 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/mem_spec_off.
 
 -------------------------------------------------
@@ -3594,8 +3696,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:54:33
-gem5 executing on arpit-linux, pid 92368
+gem5 started Oct  1 2025 23:15:29
+gem5 executing on arpit-linux, pid 70492
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/mem_spec_on test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3608,7 +3710,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252996750 because exiting with last active thread context.
+Exiting @ tick 24618251772 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/mem_spec_on.
 
 -------------------------------------------------
@@ -3628,8 +3730,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:54:37
-gem5 executing on arpit-linux, pid 92471
+gem5 started Oct  1 2025 23:19:01
+gem5 executing on arpit-linux, pid 71173
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/prefetcher_off test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l1d-prefetcher-type=None --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3642,7 +3744,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 337331331 because exiting with last active thread context.
+Exiting @ tick 28153953864 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/prefetcher_off.
 
 -------------------------------------------------
@@ -3662,8 +3764,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:54:41
-gem5 executing on arpit-linux, pid 92522
+gem5 started Oct  1 2025 23:22:35
+gem5 executing on arpit-linux, pid 71773
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/prefetcher_on test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3676,7 +3778,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252996750 because exiting with last active thread context.
+Exiting @ tick 24618251772 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/prefetcher_on.
 
 -------------------------------------------------
@@ -3696,8 +3798,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:54:44
-gem5 executing on arpit-linux, pid 92599
+gem5 started Oct  1 2025 23:26:06
+gem5 executing on arpit-linux, pid 72430
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l2_prefetcher_off test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l2-prefetcher-type=None --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3710,7 +3812,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252996750 because exiting with last active thread context.
+Exiting @ tick 24618251772 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l2_prefetcher_off.
 
 -------------------------------------------------
@@ -3730,8 +3832,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:54:48
-gem5 executing on arpit-linux, pid 92679
+gem5 started Oct  1 2025 23:29:37
+gem5 executing on arpit-linux, pid 73046
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l2_prefetcher_TaggedPrefetcher test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l2-prefetcher-type=TaggedPrefetcher --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3744,7 +3846,7 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252996750 because exiting with last active thread context.
+Exiting @ tick 24618251772 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l2_prefetcher_TaggedPrefetcher.
 
 -------------------------------------------------
@@ -3764,8 +3866,8 @@ gem5 is copyrighted software; use the --copyright option for details.
 
 gem5 version 24.1.0.3
 gem5 compiled Sep 28 2025 00:02:15
-gem5 started Sep 30 2025 09:54:52
-gem5 executing on arpit-linux, pid 92724
+gem5 started Oct  1 2025 23:33:07
+gem5 executing on arpit-linux, pid 73373
 command line: ../gem5/build/RISCV/gem5.opt --outdir=results/streaming_workload/l2_prefetcher_DCPTPrefetcher test.py --isa=RISCV --binary=streaming_workload --cpu-type=O3 --l2-prefetcher-type=DCPTPrefetcher --ROB-entries=192 --issue-width=4 --commit-width=4 --l1i-size=32kB --l1i-assoc=8 --l1d-size=32kB --l1d-assoc=8 --l2-size=256kB --l2-assoc=16 --l1i-replace-policy=LRU --l1d-replace-policy=LRU --l2-replace-policy=LRU --branch-predictor-enable --branch-predictor-type=TournamentBP --mem-dep-pred-enable --l1d-prefetcher-type=StridePrefetcher --l2-prefetcher-type=TaggedPrefetcher
 
 info: Standard input is not a terminal, disabling listeners.
@@ -3778,7 +3880,10 @@ src/sim/mem_state.cc:448: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
 Starting streaming memory access kernel...
 Streaming kernel complete. Result (to prevent optimization): 6.500000
-Exiting @ tick 252996750 because exiting with last active thread context.
+Exiting @ tick 24618251772 because exiting with last active thread context.
 Simulation finished for results/streaming_workload/l2_prefetcher_DCPTPrefetcher.
 
-./compile.sh: line 203: syntax error near unexpected token `done'
+=================================================
+ All experiments complete!
+ Results are located in the 'results/' directory.
+=================================================

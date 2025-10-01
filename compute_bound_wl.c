@@ -4,7 +4,7 @@
 
 // Define the number of iterations for the main computation loop.
 // A large number is chosen to make the program run long enough for analysis.
-#define NUM_ITERATIONS 10000
+#define NUM_ITERATIONS 100000
 
 // This function performs a chain of dependent floating-point operations.
 // The dependency (result is used in the next calculation) tests the CPU's
