@@ -78,6 +78,10 @@ may check the assignemnt ones, those are good.
 
 - L2 Hit rate is much lesser than L1 because of the fact that only more difficult to search addresses access reach L2. 
 
+## AMAT = Average Memory Access Time
+
+- AMAT(level x) = Hit Time(Level x) + Miss Rate(Level x) * Miss Penalty(Level x)
+
 ## Metrics to collect
 
 - instructions:
@@ -91,6 +95,7 @@ may check the assignemnt ones, those are good.
     - l1i
         - board.cache_hierarchy.l1_icaches.demandHits::processor.cores.core.inst
         - board.cache_hierarchy.l1_icaches.demandMisses::processor.cores.core.inst
+        - board.cache_hierarchy.l1_icaches.demandAccesses::processor.cores.core.inst
     - l2
         - board.cache_hierarchy.l2_cache.overallHits::cache_hierarchy.l1_dcaches.prefetcher
         - bboard.cache_hierarchy.l2_cache.overallHits::processor.cores.core.inst
@@ -105,3 +110,37 @@ may check the assignemnt ones, those are good.
         - board.cache_hierarchy.l2_cache.overallAccesses::processor.cores.core.inst
         - board.cache_hierarchy.l2_cache.overallAccesses::processor.cores.core.data
         - board.cache_hierarchy.l2_cache.overallAccesses::total
+    - Memory Latency:
+        - AMAT_L2 = 20 + board.cache_hierarchy.l2_cache.overallMissRate::total * board.memory.mem_ctrl.dram.avgMemAccLat / board.clk_domain.clock
+
+        - AMAT_L1i = 2 + board.cache_hierarchy.l1_icaches.demandMissRate::total * AMAT_L2
+
+        - AMAT_L1d = 2 + board.cache_hierarchy.l1_dcaches.demandMissRate::total * AMAT_L2
+
+    - Branch MisPrediction Rate:
+        - board.processor.cores.core.commit.branchMispredicts
+        - board.processor.cores.core.branchPred.committed_0::total
+
+    - Memory Dependence
+        - Failure:
+            - board.processor.cores.core.iew.memOrderViolationEvents
+        - Success:
+            - = board.processor.cores.core.commitStats0.numLoadInsts - board.processor.cores.core.iew.memOrderViolationEvents
+        - for rate divide success and failure by total = board.processor.cores.core.commitStats0.numLoadInsts
+
+    - Pipeline Flushes:
+        - board.processor.cores.core.commit.branchMispredicts + board.processor.cores.core.iew.memOrderViolationEvents
+        - in board.processor.cores.core.commit.commitSquashedInsts (the instructions that were dropped due to one intruction being flushed due to incorrect speculation)
+    
+    - Effective Stall Cycles:
+        - board.processor.cores.core.commit.numCommittedDist::0 (for small L2) - board.processor.cores.core.commit.numCommittedDist::0 (for large L2)
+        - I will provide this number
+    
+    - Energy Proxies:
+        - Formula: Total Energy Proxy = (L1_Accesses × W_L1) + (L2_Accesses × W_L2) + (DRAM_Accesses × W_DRAM)
+        - L1_Accesses = board.cache_hierarchy.l1_icaches.overallAccesses::total + board.cache_hierarchy.l1_dcaches.overallAccesses::total
+        - L2_Accesses = board.cache_hierarchy.l2_cache.overallAccesses::total
+        - DRAM_Accesses = board.memory.mem_ctrl.readReqs + board.memory.mem_ctrl.writeReqs
+        - W_L1 = 1
+        - W_L2 = 10
+        - W_DRAM = 100
